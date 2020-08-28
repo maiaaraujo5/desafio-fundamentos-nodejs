@@ -50,7 +50,7 @@ class TransactionsRepository {
     return { income, outcome, total };
   }
 
-  public create({title, value, type}: CreateTransactionDTO): Transaction {
+  public create({ title, value, type }: CreateTransactionDTO): Transaction {
     const transaction = new Transaction({
       title,
       value,
